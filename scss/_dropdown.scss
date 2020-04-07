@@ -3,10 +3,9 @@ ul {
   color: blue;
   position: absolute;
   width: 100%;
-
   top: 46px;
 
-  li {
+  a {
     padding: 1.4em 0;
     background-color: green;
     width: 100%;
@@ -14,7 +13,5 @@ ul {
     &:hover {
       background-color: red;
     }
-
-
   }
 }

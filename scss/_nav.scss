@@ -2,6 +2,7 @@ nav {
   width: 100vw;
   height: 75px;
   background-color: pink;
+  position: absolute;
 
   ul {
     @include flex-center(true);
@@ -11,6 +12,28 @@ nav {
     justify-content: flex-start;
 
     a {
+      @include flex-center(true);
+      width: 100%;
+      font-size: 1.5rem;
+      justify-content: flex-start;
+      text-align: center;
+
+      &:hover {
+        background-color: red;
+
+        ul {
+          display: block;
+        }
+      }
+
+      li {
+        position: relative;
+        width: 100%;
+        @import "_dropdown";
+      }
+    }
+
+    .drop {
       @include flex-center(true);
       width: 100%;
       font-size: 1.5rem;
