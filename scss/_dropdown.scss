@@ -1,0 +1,20 @@
+ul {
+  display: none;
+  color: blue;
+  position: absolute;
+  width: 100%;
+
+  top: 46px;
+
+  li {
+    padding: 1.4em 0;
+    background-color: green;
+    width: 100%;
+
+    &:hover {
+      background-color: red;
+    }
+
+
+  }
+}
