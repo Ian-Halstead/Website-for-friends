@@ -1,0 +1,21 @@
+$margin-dist: 50px;
+
+.head {
+  width: 100vw;
+  height: 100vh;
+
+
+  @import "nav";
+
+  @import "main-head";
+  overflow: hidden;
+
+  .decoration {
+    border: 3000px transparent solid;
+    border-bottom: 3000px red solid;
+    position: absolute;
+    top: -3500px;
+    right: -3000px;
+    z-index: -50
+  }
+}
