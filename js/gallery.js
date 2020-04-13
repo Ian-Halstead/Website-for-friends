@@ -1,11 +1,21 @@
+/* 
+* What the code does and psudo code
+
+* This script will loop through all the items in .gallery
+* and store them into images. It sorts the items based
+* on their width and starts a foreach loop through the 
+* items array. Remove first element 
+
+*/
+
 window.addEventListener('load', () => {
 	const gallery = document.getElementById('gallery');
 	const MARGIN = gallery.offsetWidth / 10;
 	const imagesHTML = gallery.getElementsByTagName('img');
 	let images = [].slice.call(imagesHTML);
 	images.sort((a, b) => a.width - b.width);
-	let min = 0;
-	let max = images.length - 1;
+	let min;
+	let max;
 	let closest = [];
 
 	const binarySearch = (value, arr, target, margin) => {
@@ -23,6 +33,7 @@ window.addEventListener('load', () => {
 			return binarySearch(value, arr, target, margin);
 		}
 		else {
+			images.splice(mid, 1);
 			return mid;
 		}
 	};
@@ -35,7 +46,7 @@ window.addEventListener('load', () => {
 		min = 0;
 		max = images.length - 1;
 		closest = [];
-		let finalId = binarySearch(value.width, images, target, MARGIN);
+		let finalId = binarySearch(value.width, images, 582, MARGIN);
 
 		if (finalId === -1) {
 			images.forEach((value) => closest.push(value));
