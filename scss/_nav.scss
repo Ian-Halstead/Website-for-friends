@@ -33,9 +33,9 @@ nav {
 
 
   ul {
-    display: none;
+
     margin-left: auto;
-    // display: flex;
+    display: flex;
     list-style: none;
     margin-bottom: 10px;
     margin-right: 70px;
@@ -48,7 +48,7 @@ nav {
     height: 100vh;
     flex-direction: column;
     text-align: center;
-
+    transform: translateX(-100vw);
 
 
     $li-margin: 3vh;

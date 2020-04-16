@@ -22,3 +22,14 @@ $margin-dist: 50px;
     // z-index: -50
   }
 }
+
+.nav-anim {
+  animation: slide-from-left .5s linear 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.nav-anim-hide {
+  animation: slide-from-left .5s linear 0s 1 reverse;
+  animation-fill-mode: forwards;
+
+}
