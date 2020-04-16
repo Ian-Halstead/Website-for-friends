@@ -1,44 +1,51 @@
+$text-margin: 50px;
+
 .after-nav {
-  display: flex;
-  align-items: center;
-  height: calc(100vh - 90px);
+  // display: flex;
+  // align-items: center;
+  // height: calc(100vh - 90px);
   width: 100vw;
 
 
   .content {
     width: 100%;
-    display: flex;
+    // display: flex;
     height: auto;
 
     .main {
-      background-color: #4B6599;
-      width: 45vw;
-      padding-bottom: 5vh;
+      // background-color: #4B6599;
+      // width: 45vw;
+      // padding-bottom: 5vh;
+      width: 100vw;
 
       &-text {
-        margin-left: 50px;
+        margin-left: $text-margin;
         font-family: $main-font;
 
         h1 {
-          color: white;
-          font-size: 6.5rem;
+          // color: white;
+          color: black;
+          // font-size: 7.5rem;
+          font-size: 3rem;
           padding-bottom: 4%;
-          font-weight: 300;
+          font-weight: 200;
           padding-top: 9%;
 
         }
 
         p {
           width: 70%;
-          color: white;
-          font-size: 1.5rem;
+          // color: white;
+          color: black;
+          // font-size: 1.7rem;
+          font-size: 1rem;
           margin-bottom: 5%;
-
         }
 
         .btn {
 
-          padding: 20px 50px;
+          // padding: 20px 50px;
+          padding: 10px 25px;
           background-color: rgba(16, 16, 16, .51);
           width: 0px;
           display: flex;
@@ -60,25 +67,35 @@
     .images {
       align-self: center;
       margin-left: auto;
-      width: 45vw;
-      height: 500px;
+      // width: 40vw;
+      // height: 60vh;
       position: relative;
+      // display: none;
+
+
 
       img {
-        position: absolute;
+        // position: absolute;
 
 
       }
 
       .front {
-        z-index: 2;
-        bottom: 0;
+        // z-index: 2;
+        // bottom: 0;
+        // left: 3%
+        width: 75vw;
+        margin-left: $text-margin;
+        padding-top: 3%;
       }
 
       .back {
         z-index: -1;
         top: 0px;
         right: -5%;
+        display: none;
+
+
       }
 
 

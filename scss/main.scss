@@ -1,6 +1,9 @@
 $main-font: "segoe UI",
 sans-serif;
 
+@import "utils";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +11,7 @@ sans-serif;
 
 :root {
   font-size: 10px;
+
 }
 
 body,
